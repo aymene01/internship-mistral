@@ -4,8 +4,6 @@ import GoogleProvider from "next-auth/providers/google"
 import { PrismaAdapter } from "@auth/prisma-adapter"
 import { database } from '@repo/db'
 
-export { type NextAuthRequest } from "next-auth/lib"
-
 const opts: NextAuthConfig = {
   providers: [
     GithubProvider({

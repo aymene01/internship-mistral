@@ -1,5 +1,6 @@
 import SessionProvider from "./session";
 import AuthGuard from "./auth-guard";
+import { SidebarProvider } from "../components/ui/sidebar";
 
 import { PropsWithChildren } from "react";
 
@@ -9,9 +10,11 @@ export default async function Providers({ children }: PropsWithChildren) {
   const session = await auth()
   return (
     <SessionProvider session={session}>
-      <AuthGuard>
-        {children}
-      </AuthGuard>
+      <SidebarProvider>
+        <AuthGuard>
+         {children}
+        </AuthGuard>
+      </SidebarProvider>
     </SessionProvider>
   );
 }

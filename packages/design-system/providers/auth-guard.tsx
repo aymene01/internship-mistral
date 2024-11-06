@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation'
 import { usePathname } from 'next/navigation'
 import { useEffect } from 'react'
 
-const LOGIN_PATH = ['/signin', '/error']
+const LOGIN_PATH = ['/signin', '/error', '/']
 
 const AuthGuard = ({ children }: { children: React.ReactNode }) => {
   const { status } = useSession()
@@ -21,7 +21,7 @@ const AuthGuard = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     if (shouldRedirectToAuth) push('/signin')
-    if (shouldRedirectToApp) push('/')
+    if (shouldRedirectToApp) push('/chat')
   }, [shouldRedirectToApp, shouldRedirectToAuth, push])
 
   if (status === 'loading' || shouldRedirectToApp || shouldRedirectToAuth) return <div />

@@ -72,6 +72,12 @@ importers:
       '@testing-library/react':
         specifier: ^16.0.1
         version: 16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.12)(react-dom@19.0.0-rc-02c0e824-20241028)(react@19.0.0-rc-02c0e824-20241028)
+      framer-motion:
+        specifier: ^11.11.11
+        version: 11.11.11(react-dom@19.0.0-rc-02c0e824-20241028)(react@19.0.0-rc-02c0e824-20241028)
+      lucide-react:
+        specifier: ^0.454.0
+        version: 0.454.0(react@19.0.0-rc-02c0e824-20241028)
       next:
         specifier: ^14
         version: 14.2.17(@babel/core@7.26.0)(react-dom@19.0.0-rc-02c0e824-20241028)(react@19.0.0-rc-02c0e824-20241028)
@@ -7242,6 +7248,25 @@ packages:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
     dev: true
 
+  /framer-motion@11.11.11(react-dom@19.0.0-rc-02c0e824-20241028)(react@19.0.0-rc-02c0e824-20241028):
+    resolution: {integrity: sha512-tuDH23ptJAKUHGydJQII9PhABNJBpB+z0P1bmgKK9QFIssHGlfPd6kxMq00LSKwE27WFsb2z0ovY0bpUyMvfRw==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0
+      react-dom: ^18.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      react: 19.0.0-rc-02c0e824-20241028
+      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
+      tslib: 2.7.0
+    dev: false
+
   /framework-utils@1.1.0:
     resolution: {integrity: sha512-KAfqli5PwpFJ8o3psRNs8svpMGyCSAe8nmGcjQ0zZBWN2H6dZDnq+ABp3N3hdUmFeMrLtjOCTXD4yplUJIWceg==}
     dev: false
@@ -8722,6 +8747,14 @@ packages:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
     dependencies:
       react: 18.3.1
+    dev: false
+
+  /lucide-react@0.454.0(react@19.0.0-rc-02c0e824-20241028):
+    resolution: {integrity: sha512-hw7zMDwykCLnEzgncEEjHeA6+45aeEzRYuKHuyRSOPkhko+J3ySGjGIzu+mmMfDFG1vazHepMaYFYHbTFAZAAQ==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
+    dependencies:
+      react: 19.0.0-rc-02c0e824-20241028
     dev: false
 
   /lz-string@1.5.0:

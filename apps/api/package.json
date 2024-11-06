@@ -3,7 +3,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "test": "pnpm vitest --run"
+    "test": "pnpm vitest --run",
+    "build": "pnpm tsc --outDir dist"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.5",
