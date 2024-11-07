@@ -36,7 +36,7 @@ This project includes:
 
 - **AI Integration**: Human-like responses powered by Mistral AI.
 - **Persistent Chat Storage**: Conversations are saved for seamless resumption.
-- **Authentication System**: Secure sign-in with GitHub and Google.
+- **Authentication System**: Secure sign-in with Google.
 - **Dockerized Environment**: Simplifies setup with Docker Compose.
 
 ## 🌟 Key Features
@@ -44,7 +44,7 @@ This project includes:
 - **AI-Driven Conversations**: Enjoy intelligent, responsive interactions powered by Mistral AI, delivering human-like responses and enhancing user engagement.
 - **Persistent Chat History**: Conversations are stored securely, allowing you to pick up from where you left off across sessions.
 - **Modular Design System**: Shared UI components maintain consistency and make the app scalable and maintainable.
-- **User Authentication**: Secure sign-in with GitHub and Google for personalized user experiences.
+- **User Authentication**: Secure sign-in with Google for personalized user experiences.
 
 ---
 
