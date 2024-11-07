@@ -7,7 +7,9 @@
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo test",
-    "db:generate": "turbo db:generate"
+    "db:generate": "turbo db:generate",
+    "db:migrate": "turbo db:migrate",
+    "db:setup": "pnpm install && docker compose up -d && pnpm db:generate && pnpm db:migrate"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.0",
