@@ -9,7 +9,7 @@
     "test": "turbo test",
     "db:generate": "turbo db:generate",
     "db:migrate": "turbo db:migrate",
-    "db:setup": "pnpm install && docker compose up -d && pnpm db:generate && pnpm db:migrate"
+    "db:setup": "docker compose up -d && node envs.js && pnpm i && pnpm db:migrate"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.0",
