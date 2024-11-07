@@ -38,6 +38,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@mistralai/mistralai':
+        specifier: ^1.1.0
+        version: 1.1.0(zod@3.23.8)
       '@prisma/client':
         specifier: ^5.22.0
         version: 5.22.0(prisma@5.22.0)
@@ -1769,6 +1772,14 @@ packages:
     dependencies:
       next: 15.0.2(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(react-dom@18.3.1)(react@18.3.1)
       whatwg-fetch: 3.6.20
+    dev: false
+
+  /@mistralai/mistralai@1.1.0(zod@3.23.8):
+    resolution: {integrity: sha512-YueaIX+g4+QTX6ERLjZLZMOhlC0/EoqwpayWrUKfTM9EGTyiOPdxFLpLpg5B9PsaxOrmZDC88pOp4QgSMqVr8w==}
+    peerDependencies:
+      zod: '>= 3'
+    dependencies:
+      zod: 3.23.8
     dev: false
 
   /@next/env@14.2.17:

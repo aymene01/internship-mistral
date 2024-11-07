@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mistralai/mistralai": "^1.1.0",
     "@prisma/client": "^5.22.0",
     "@repo/auth": "*",
     "@repo/design-system": "*",
