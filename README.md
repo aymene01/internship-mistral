@@ -59,12 +59,12 @@ Organized as a monorepo for modularity and reusability.
 1. **Clone the repository**:
    ```bash
    git clone git@github.com:aymene01/internship-mistral.git
-   cd mistral-chat
+   cd internship-mistral
    ```
 
 2. **Install dependencies**:
    ```bash
-   pnpm setup
+   pnpm db:setup
    ```
 
 3. **Set up environment variables**:
@@ -76,12 +76,6 @@ Organized as a monorepo for modularity and reusability.
    ```
 
    Access the app at [http://localhost:4000](http://localhost:4000).
-
-5. **Optional - Docker Setup**:
-   If Docker is installed, run:
-   ```bash
-   docker-compose up
-   ```
 
 ---
 
