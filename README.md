@@ -55,12 +55,6 @@ Organized as a monorepo (Turborepo) for modularity and reusability.
 ### Root Structure
 
 - **`apps/web`**: Main application code.
-  - **`app`**: Core pages, API routes, and main app structure.
-  - **`.env`**: Configuration file for environment variables.
-  - **`next.config.mts`**: Next.js configuration.
-  - **`postcss.config.mjs`** & **`tailwind.config.ts`**: Tailwind CSS configurations.
-  - **`tsconfig.json`**: TypeScript configuration.
-
 - **`packages`**: Reusable modules.
   - **`auth`**: Authentication logic for GitHub and Google logins.
   - **`db`**: Database client, models, and schemas.
