@@ -77,7 +77,7 @@ Organized as a monorepo (Turborepo) for modularity and reusability.
 1. **Clone the repository**:
    ```bash
    git clone git@github.com:aymene01/internship-mistral.git
-   cd internship-mistral
+   cd iinternship-mistra
    ```
 
 2. **Install dependencies and database setup**:
@@ -124,7 +124,7 @@ Licensed under the MIT License. See the [LICENSE](LICENSE) file for more details
 **Aymene Bousbia**
 
 - 🔍 Explore: [GitHub Profile](https://github.com/aymene01)
-- 💬 Ask me about anything [here](https://github.com/aymene01/mistral-internship/issues).
+- 💬 Ask me about anything [here](https://github.com/aymene01/internship-mistra/issues).
 
 # 📬 Feedback
 
