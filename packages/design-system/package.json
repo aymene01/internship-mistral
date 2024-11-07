@@ -76,7 +76,7 @@
   "devDependencies": {
     "@clerk/types": "^4.29.0",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^22.8.7",
+    "@types/node": "^22.9.0",
     "@types/react": "^18.3.12",
     "@types/react-syntax-highlighter": "^15.5.13",
     "autoprefixer": "^10.4.20",
