@@ -10,11 +10,11 @@ export default async function Providers({ children }: PropsWithChildren) {
   const session = await auth()
   return (
     <SessionProvider session={session}>
-      <SidebarProvider>
-        <AuthGuard>
-         {children}
-        </AuthGuard>
-      </SidebarProvider>
+      <AuthGuard>
+        <SidebarProvider>
+          {children}
+        </SidebarProvider>
+      </AuthGuard>
     </SessionProvider>
   );
 }

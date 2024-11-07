@@ -1,32 +1,34 @@
 "use client"
 
-import React from 'react'
+import React, { useEffect } from 'react';
+import { useSession } from "@repo/auth/react";
+import { useRouter, usePathname } from 'next/navigation';
 
-import { useSession } from "@repo/auth/react"
-import { useRouter } from 'next/navigation'
-import { usePathname } from 'next/navigation'
-import { useEffect } from 'react'
-
-const LOGIN_PATH = ['/signin', '/error', '/']
+const LOGIN_PATH = ['/signin', '/error'];
 
 const AuthGuard = ({ children }: { children: React.ReactNode }) => {
-  const { status } = useSession()
-  const { push } = useRouter()
-  const pathname = usePathname()
+  const { status } = useSession();
+  const { push } = useRouter();
+  const pathname = usePathname();
 
-  const isOnLoginPath = LOGIN_PATH.includes(pathname)
+  const isOnLoginPath = LOGIN_PATH.includes(pathname);
 
-  const shouldRedirectToAuth = status === 'unauthenticated' && !isOnLoginPath
-  const shouldRedirectToApp = status === 'authenticated' && isOnLoginPath
+  const shouldRedirectToAuth = status === 'unauthenticated' && !isOnLoginPath;
+  const shouldRedirectToApp = status === 'authenticated' && isOnLoginPath;
+  const shouldRedirectFromRoot = pathname === '/' && status === 'authenticated';
 
   useEffect(() => {
-    if (shouldRedirectToAuth) push('/signin')
-    if (shouldRedirectToApp) push('/chat')
-  }, [shouldRedirectToApp, shouldRedirectToAuth, push])
+    if (shouldRedirectToAuth) push('/signin');
+    else if (shouldRedirectToApp) push('/chat');
+    else if (shouldRedirectFromRoot) push('/chat');
+    else if (pathname === '/' && status === 'unauthenticated') push('/signin');
+  }, [shouldRedirectToAuth, shouldRedirectToApp, shouldRedirectFromRoot, pathname, push, status]);
 
-  if (status === 'loading' || shouldRedirectToApp || shouldRedirectToAuth) return <div />
+  if (status === 'loading' || shouldRedirectToApp || shouldRedirectToAuth || shouldRedirectFromRoot) {
+    return <div />;
+  }
 
-  return <>{children}</>
-}
+  return <>{children}</>;
+};
 
-export default AuthGuard
+export default AuthGuard;

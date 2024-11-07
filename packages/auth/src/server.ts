@@ -15,11 +15,12 @@ const opts: NextAuthConfig = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     }),
   ],
+  trustHost: true,
   pages: {
     signIn: '/signin',
     error: '/error',
   },
-  secret: process.env.SECRET,
+  secret: process.env.AUTH_SECRET,
   callbacks: {
     jwt: async ({ token }) => {
       return token;

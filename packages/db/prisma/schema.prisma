@@ -24,6 +24,7 @@ model User {
   updatedAt DateTime  @updatedAt
   Account   Account[]
   Session   Session[]
+  Chat      Chat[]
 }
 
 model VerificationToken {
@@ -61,4 +62,25 @@ model Session {
   user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
+}
+
+model Chat {
+  id       String    @id @default(uuid())
+  name     String
+  userId   String
+  createdAt DateTime @default(now())
+  messages Message[]
+  user     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model Message {
+  id      String @id @default(uuid())
+  role    String // 'user' or 'assistant'
+  content String
+  chatId  String
+  chat    Chat   @relation(fields: [chatId], references: [id], onDelete: Cascade)
+
+  @@index([chatId])
 }

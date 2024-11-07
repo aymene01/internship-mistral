@@ -5,7 +5,9 @@
   "main": "index.ts",
   "types": "index.ts",
   "scripts": {
-    "db:generate": "pnpm prisma generate"
+    "db:generate": "pnpm prisma generate",
+    "db:deploy": "pnpm prisma deploy",
+    "db:migrate": "pnpm prisma migrate dev"
   },
   "keywords": [],
   "author": "",
