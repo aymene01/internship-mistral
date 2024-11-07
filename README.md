@@ -28,7 +28,7 @@
 
 Hello Mistral Team,
 
-I'm Aymene Bousbia, and I’m excited to present **Mistral Chat**: an AI-powered chat application designed as part of my software engineering internship. This project showcases a modern, scalable, and user-friendly chat interface integrated with Mistral's advanced AI capabilities. Below, I outline the project's features, technical details, and implementation insights.
+I'm Aymene Bousbia, submitting **Mistral Chat** as part of the Software Engineering internship application. This AI-powered chat app integrates Mistral’s AI for a modern and scalable chat experience. Below are its key features and technical details.
 
 ## Project Overview
 
@@ -38,13 +38,6 @@ This project includes:
 - **Persistent Chat Storage**: Conversations are saved for seamless resumption.
 - **Authentication System**: Secure sign-in with Google.
 - **Dockerized Environment**: Simplifies setup with Docker Compose.
-
-## 🌟 Key Features
-
-- **AI-Driven Conversations**: Enjoy intelligent, responsive interactions powered by Mistral AI, delivering human-like responses and enhancing user engagement.
-- **Persistent Chat History**: Conversations are stored securely, allowing you to pick up from where you left off across sessions.
-- **Modular Design System**: Shared UI components maintain consistency and make the app scalable and maintainable.
-- **User Authentication**: Secure sign-in with Google for personalized user experiences.
 
 ---
 
