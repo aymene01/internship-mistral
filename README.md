@@ -48,6 +48,16 @@ This project includes:
 
 ---
 
+## 🌐 Production Access
+
+If you would like to **quickly test the application without setting up a local environment**, simply visit the live production version at:
+
+**[https://internship-mistral-web-5nt1.vercel.app](https://internship-mistral-web-5nt1.vercel.app)**
+
+This live version is deployed with full functionality, allowing you to experience all features directly.
+
+---
+
 ## 📂 Project Structure
 
 Organized as a monorepo (Turborepo) for modularity and reusability.
