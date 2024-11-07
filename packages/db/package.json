@@ -6,7 +6,7 @@
   "types": "index.ts",
   "scripts": {
     "db:generate": "pnpm prisma generate",
-    "db:deploy": "pnpm prisma deploy",
+    "db:deploy": "pnpm prisma migrate deploy",
     "db:migrate": "pnpm prisma migrate dev"
   },
   "keywords": [],
