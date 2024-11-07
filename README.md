@@ -1,8 +1,43 @@
-# Mistral Chat - Internship Project 🚀
 
-Welcome to **Mistral Chat**! This is an AI-powered chat application developed as part of an advanced Software Engineering internship. The project exemplifies state-of-the-art web development practices, seamless UI/UX design, and powerful integration with Mistral’s cutting-edge AI model.
+<p align="center">
+  <picture>
+    <source srcset="./assets/mistral-logo.png">
+    <img alt="Mistral Chat logo" height="180px" src="./assets/mistral-logo.png">
+  </picture>
+</p>
 
----
+<p align="center">
+  <strong style="font-size: 24px;">Final Submission for Software Engineering Internship Project</strong>
+  <br />
+  <em>By Aymene Bousbia, showcasing advanced AI-driven chat development</em>
+  <br />
+  <br />
+</p>
+
+<div align="center">
+  <p>
+    <a href="https://github.com/aymene01/mistral-chat/issues"><img src="https://img.shields.io/github/issues/aymene01/mistral-chat.svg" alt="GitHub Issues"></a>
+    <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/built%20with-Node.js-339933.svg" alt="Built with Node.js"></a>
+    <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/using-Typescript-007ACC.svg" alt="Using TypeScript"></a>
+  </p>
+</div>
+
+# Mistral Chat - Software Engineering Internship Project
+
+## Introduction
+
+Hello Mistral Team,
+
+I'm Aymene Bousbia, and I’m excited to present **Mistral Chat**: an AI-powered chat application designed as part of my software engineering internship. This project showcases a modern, scalable, and user-friendly chat interface integrated with Mistral's advanced AI capabilities. Below, I outline the project's features, technical details, and implementation insights.
+
+## Project Overview
+
+This project includes:
+
+- **AI Integration**: Human-like responses powered by Mistral AI.
+- **Persistent Chat Storage**: Conversations are saved for seamless resumption.
+- **Authentication System**: Secure sign-in with GitHub and Google.
+- **Dockerized Environment**: Simplifies setup with Docker Compose.
 
 ## 🌟 Key Features
 
@@ -13,20 +48,9 @@ Welcome to **Mistral Chat**! This is an AI-powered chat application developed as
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Next.js**: Framework for server-rendered and statically generated applications.
-- **React**: Library for building interactive UIs.
-- **Tailwind CSS**: Utility-first CSS framework for creating responsive, customized designs.
-- **Framer Motion**: Animations and transitions for a fluid user experience.
-- **TypeScript**: Adds static typing to JavaScript for robust, maintainable code.
-- **Mistral AI SDK**: Direct integration with Mistral’s API for AI-driven conversations.
-
----
-
 ## 📂 Project Structure
 
-Organized as a monorepo for modularity and reusability.
+Organized as a monorepo (Turborepo) for modularity and reusability.
 
 ### Root Structure
 
@@ -39,7 +63,7 @@ Organized as a monorepo for modularity and reusability.
 
 - **`packages`**: Reusable modules.
   - **`auth`**: Authentication logic for GitHub and Google logins.
-  - **`db`**: Database utilities, models, and schemas.
+  - **`db`**: Database client, models, and schemas.
   - **`design-system`**: Shared UI components for consistent styling.
   - **`typescript-config`**: Central TypeScript configuration.
 
@@ -62,7 +86,7 @@ Organized as a monorepo for modularity and reusability.
    cd internship-mistral
    ```
 
-2. **Install dependencies**:
+2. **Install dependencies and database setup**:
    ```bash
    pnpm db:setup
    ```
@@ -76,16 +100,6 @@ Organized as a monorepo for modularity and reusability.
    ```
 
    Access the app at [http://localhost:4000](http://localhost:4000).
-
----
-
-## 🧩 Modular Components
-
-**Packages** folder includes shared modules:
-
-- **Design System**: Common UI elements (buttons, modals, etc.) for a unified look and feel.
-- **Auth**: Configures GitHub and Google login providers for secure authentication.
-- **Database Module**: Models and helpers standardize and simplify database interactions.
 
 ---
 
@@ -111,8 +125,15 @@ Licensed under the MIT License. See the [LICENSE](LICENSE) file for more details
 
 ---
 
-## 📧 Contact
+## 👤 Author
 
-For questions or collaborations, reach out to **[Your Name](mailto:your-email@example.com)**.
+**Aymene Bousbia**
 
-Happy chatting with Mistral AI! 🎉
+- 🔍 Explore: [GitHub Profile](https://github.com/aymene01)
+- 💬 Ask me about anything [here](https://github.com/aymene01/mistral-internship/issues).
+
+# 📬 Feedback
+
+Your opinions and feedback are what shape the future; let's craft it beautifully together. Share your thoughts in the issues or through discourse.
+
+<!-- Your personal message or trademark --> <div align="center"> <sub>Built with ❤️ by <a href="https://github.com/aymene01">Aymene Bousbia</a></sub> </div>
