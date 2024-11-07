@@ -95,7 +95,7 @@ Organized as a monorepo (Turborepo) for modularity and reusability.
    pnpm db:setup
    ```
 
-3. **Set up environment variables**:
+3. **⚠️ Set up environment variables**:
    Create a `.env.local` file in the `apps/web` directory and follow the .env.example
 
 4. **Run the application**:
